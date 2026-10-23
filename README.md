@@ -262,10 +262,3 @@ Esta seção resume o raciocínio por trás do projeto. Use-a como checklist ao 
 10. **Proteja as chaves.** Chaves de API ficam no `.env`, que não deve ir para o git.
 
 ---
-
-## Limitações e próximos passos
-
-* Não há limite de iterações: um modelo que sempre pede ferramentas entra em loop.
-* `should_continue` assume que `tool_calls` existe na última mensagem; se o último item não for uma `AIMessage`, o acesso pode falhar.
-* O `hello.py` é um arquivo de exemplo do `uv init` e não participa do agente.
-* Ideias para evoluir: adicionar memória entre execuções (checkpointer), streaming de respostas, testes automatizados do grafo e mais ferramentas.
